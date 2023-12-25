@@ -1,6 +1,4 @@
-const {
-  getAllPlannets,
-} = require("/Users/macintosh/Desktop/Web-development/NASA_PROJECT/server/src/models/planets.model.js");
+const { getAllPlannets } = require('../../models/planets.model');
 
 const httpGetAllPlanets = async (req, res) => {
   res.status(200).json(await getAllPlannets());
